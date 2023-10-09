@@ -2,23 +2,43 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Demo_Learn.MainPage">
-
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+    <StackLayout
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand"
+        Padding="30"
+        >
+        <!--use bonding for link value on forms-->
+        <Label 
+            Text="{Binding Source={x:Reference slider}, Path=Value, StringFormat='value is {0:F2}' }"
+            FontSize="Large"
+            TextColor="Orange"
+            FontAttributes="Bold"
+            x:Name="label"
+            Opacity="{Binding Source={x:Reference slider}, Path=Value}"
+            ></Label>
+        <Slider
+            MinimumTrackColor="Orange"
+            ThumbColor="DimGray"
+            HeightRequest="30"
+            WidthRequest="300"
+            x:Name="slider"
+            BackgroundColor="LightGray"
+            />
+        <Button
+            Text="Exercice"
+            TextColor="White"
+            BackgroundColor="Orange"
+            Clicked="PageExercice"
+            />
+        <!--<Slider
+            MinimumTrackColor="Orange"
+            ThumbColor="DimGray"
+            Minimum="0"
+            Maximum="100"
+            HeightRequest="30"
+            WidthRequest="300"
+            BackgroundColor="LightGray"
+            ValueChanged="OnSliderValueChanged"
+            />-->
     </StackLayout>
-
 </ContentPage>

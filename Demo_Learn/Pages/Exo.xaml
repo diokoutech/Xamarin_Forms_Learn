@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo_Learn.Pages.Exo">
+    <ContentPage.Content>
+        <StackLayout>
+        <!--exo-->
+            <Button 
+                Text="Next"
+                BackgroundColor="Orange"
+                TextColor="AliceBlue"
+                Clicked="ChangeText"
+                />
+            <Label x:Name="labelFont" Text="{Binding Source={x:Reference slider}, Path=Value, StringFormat='font : {0}' }"></Label>
+        <Slider x:Name="slider" Maximum="50" />
+        <Label 
+            Text="Texte à afficher" 
+            x:Name="textShow"
+            FontSize="{Binding Source={x:Reference slider}, Path=Value}"
+            Padding="5,10,5,10" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

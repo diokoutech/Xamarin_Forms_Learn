@@ -15,14 +15,17 @@ namespace Demo_Learn
 
         protected override void OnStart()
         {
+            Console.WriteLine("On Start");
         }
 
         protected override void OnSleep()
         {
+            Console.WriteLine("On Sleep");
         }
 
         protected override void OnResume()
         {
+            Console.WriteLine("On Resume");
         }
     }
 }
