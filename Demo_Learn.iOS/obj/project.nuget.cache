@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "g6GAL4UEaBEXVTPkF6DvR3VcscGT7zdZnfwdGbrgKZVsIai9wQrCjziY6cUUTR7esO0jIipysatGBxeayyQulA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ousma\\Documents\\Workspace Diokou Tech\\Dotnet\\Xamarin\\Demo_Learn\\Demo_Learn.iOS\\Demo_Learn.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ousma\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\ousma\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\ousma\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

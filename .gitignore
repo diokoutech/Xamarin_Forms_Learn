@@ -1,0 +1,10 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Demo_Learn.Android/obj/Debug/130
+/Demo_Learn/obj
+/Demo_Learn/bin/Debug/netstandard2.0
+/Demo_Learn.Android/bin/Debug
+/Demo_Learn.Android/obj
