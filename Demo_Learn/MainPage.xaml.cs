@@ -1,10 +1,5 @@
 ﻿using Demo_Learn.Pages;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Demo_Learn
@@ -36,6 +31,10 @@ namespace Demo_Learn
         public void PageExercice(object sender, EventArgs args)
         {
             Navigation.PushModalAsync(new Exo());
+        }        
+        public void PageGrid(object sender, EventArgs args)
+        {
+            Navigation.PushAsync(new GridPage());
         }
     }
 }

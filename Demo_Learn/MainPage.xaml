@@ -30,6 +30,12 @@
             BackgroundColor="Orange"
             Clicked="PageExercice"
             />
+        <Button
+            Text="Grid Page"
+            TextColor="White"
+            BackgroundColor="Orange"
+            Clicked="PageGrid"
+            />
         <!--<Slider
             MinimumTrackColor="Orange"
             ThumbColor="DimGray"
